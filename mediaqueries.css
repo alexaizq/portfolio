@@ -8,10 +8,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .section_pic-container img {
-        width: 150px;
-        height: 150px;
-    }
     
     #projects .title {
         font-size: 2rem;
