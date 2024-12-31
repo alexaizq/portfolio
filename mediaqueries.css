@@ -1,0 +1,27 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section_pic-container img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #projects .title {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+
+    .project-card {
+        max-width: 100%; /* Expand card to full width */
+    }
+}

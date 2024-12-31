@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexa's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Alexa Aguilar Izquierdo</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Alexa Aguilar Izquierdo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.JPG" alt="Alexa Profile Picture" />
+        </div>
+        <div class="section_text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Alexa Aguilar Izquierdo</h1>
+            <p class="section_text_p2">Mechanical Engineering Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn"
+                    class="icon" onclick="location.href='https://www.linkedin.com/in/alexa-aguilar-izquierdo/'"/>
+                <img src="./assets/github.png" alt="Github"
+                    class="icon" onclick="location.href='https://github.com/alexaizq'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+            </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>Internship & Research<br />Mechanical Engineering</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                    <h3>Education</h3>
+                    <p>Bachelor of Science 2025 <br />Master of Science 2026</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>Hi! I'm Alexa, a passionate and driven Mechanical Engineering student pursuing Bachelor's and Master's degrees at UT Austin, along with a Robotics minor. I'm interested in R&D, robotics, medical devices, and semiconductor manufacturing. When I'm not studying, you'll find me doing hands-on work at the Machine Shop or in a surgical robotics research lab. Beyond engineering, I also enjoy bouldering, playing soccer, grilling, and learning how to play the guitar.</p>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon" onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./assets/project-0.png" alt="Battle Bot" class="project-img">
+                <h2>Battle Bot</h2>
+                <p>Designed and built a battle bot with a vertical spinning blade, optimized for agility and impact in competitive robotics challenges.</p>
+                <div class="btn-container">
+                    <a href="battle-bot.html" class="btn btn-color-2">See Full Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/project-1.png" alt="Laser-Cut Pinball Machine" class="project-img">
+                <h2>Laser-Cut Pinball Machine</h2>
+                <p>Designed and built a pinball machine made of laser-cut mechanical components.</p>
+                <div class="btn-container">
+                    <a href="laser-cut-pinball.html" class="btn btn-color-2">See Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/project-2.png" alt="Mini Golf Machine" class="project-img">
+                <h2>Mini Golf Machine</h2>
+                <p>Created a mini golf machine with automated features, combining mechanical design and control systems to enhance playability.</p>
+                <div class="btn-container">
+                    <a href="mini-golf-machine.html" class="btn btn-color-2">See Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/project-3.png" alt="Stanford Pupper Robot Leg" class="project-img">
+                <h2>Stanford Pupper Robot Leg</h2>
+                <p>Developed a robot leg for the Stanford Pupper project, enhancing mobility and control for quadruped robots.</p>
+                <div class="btn-container">
+                    <a href="stanford-pupper.html" class="btn btn-color-2">See Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/project-4.png" alt="Remote Controlled Car" class="project-img">
+                <h2>Remote Controlled Car</h2>
+                <p>Engineered a remote-controlled car, incorporating mechanical and electrical systems for precise control and speed.</p>
+                <div class="btn-container">
+                    <a href="remote-controlled-car.html" class="btn btn-color-2">See Project</a>
+                </div>
+            </div>
+        </div>        
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:alexaizq@utexas.edu">alexaizq@utexas.edu</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/alexa-aguilar-izquierdo/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!--p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>!-->
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
