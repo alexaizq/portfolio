@@ -303,7 +303,7 @@ section {
   /* Projects Section */
 #projects {
     margin: 0 1rem;
-    padding: 4rem;
+    padding: 4rem 2rem;
     background-color: #f9f9f9;
     flex-direction: column;
 }
@@ -442,8 +442,8 @@ section {
 
   main {
     padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto; /* Center the content */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 main section {
@@ -565,3 +565,4 @@ main img {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
